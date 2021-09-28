@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Tool</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-text">Lighten/Darken Color</h1>
+
+        <div>
+            <label for="hexColor">Color [Hex]</label>
+            <input type="text" id="hex-el" value="#027e7e">
+        </div>
+
+        <div class="toggle">
+            <p id="lightenText" class="toggle-text ">Lighten</p>
+            <div id="toggleBtn" class="toggle-btn">
+                <div class="inner-circle"></div>
+            </div>
+            <p id="darkenText" class="toggle-text unselected">Darken</p>
+        </div>
+
+        <div>
+            <label for="slider" id="slider-text">0 %</label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider-el">
+        </div>
+
+        <p>Input Color</p>
+        <div id="input-color" class="box"> </div>
+
+        <p id="alter-text">Altered color</p>
+        <div id="alter-color" class="box"> </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

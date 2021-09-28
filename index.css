@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin+Sketch:wght@700&display=swap');
+body{
+    background-color: #065164;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 25px;
+}
+
+.title-text{
+    font-size: 70px;
+    font-family: 'Caveat', cursive;
+    color: #065164;
+    text-align: center;
+}
+
+.container{
+    margin: 20px 330px;
+    border: 2px black;
+    background-color: rgb(169, 238, 255);
+    width: 90vmin;
+   
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.box{
+   height: 100px;
+   width: 100%;
+   background-color: #027e7e;
+   border-radius: 30px;
+   margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    margin-bottom: 2px;
+}
+input{
+    margin-bottom: 25px;
+   
+}
+
+input[type = "text"]{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.toggle-text{
+    font-size: 25px;
+}
+.toggle-btn{
+    height: 30px;
+    width: 60px;
+    background-color: #627e7e;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+}
+.inner-circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #9ddada;
+    transition: all 250ms;
+}
+.toggle-btn.toggled > .inner-circle{
+    transform: translateX(30px);
+    background-color: #0a2626;
+}
+.unselected{
+    opacity: 0.25;
+}
